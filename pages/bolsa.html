@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--Hoja  de estilos -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- .ico -->
+  <link rel="icon" href="../imgs/moonIcon.ico">
+  <!-- Fuente Paprika -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Paprika&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <title>Tu Bolsa - Mercado de la Luna</title>
+</head>
+<body>
+    <header>    
+        <div class="top-bar">
+                <a href="../index.html" class="home">
+                <img class="logo" src="https://bg3.wiki/w/images/4/45/Class_Druid_Moon_Badge_Icon.png" alt="luna">
+                <h1>El Mercado de la Luna</h1>
+                </a>          
+            <nav class="navbar-container">
+                <ul class="nav-list">
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./reseñas.html">Reseñas</a></li>
+                    <li id=><a id="list-item-bag" href="./bolsa.html"><img src="https://cdn-icons-png.freepik.com/512/1232/1232698.png" alt="bag"><span id="item-counter">0</span></a></li>
+                </ul>
+            </nav>   
+        </div>            
+         
+    </header>
+    <main>
+           <h2 id="bolsa-title">Tu Bolsa</h2> 
+           <section>
+            <div id="bag-list" class="prod-list">
+                <!-- LISTA DE PRODS -->
+                
+            </div>
+
+            <div id="resumen-carrito">
+                <p>Total de productos: <span id="total-productos">0</span></p>
+                <p>Importe total: <span id="importe-total">0</span>GP</p>
+            </div>
+
+            <button class="boton-finalizar" onclick="realizarCompra()">Finalizar Compra</button>
+           </section>
+            
+    </main>
+    
+    <footer>
+        <div class="iframe-container">
+            <p>Buscanos en la proxima luna llena</p>
+            <iframe sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-downloads" frameborder="0" allowfullscreen="" src="https://azgaar.github.io/Fantasy-Map-Generator/?maplink=https://dl.dropboxusercontent.com/s/42vnox2ce16altr/FMG%20Example.map?dl=0" style="overflow: auto;"></iframe>
+        </div>
+        <div class="redes-container">
+            <p>Seguinos en nuestras redes</p>
+            <div class="rrss-icons">
+                <a href=""><box-icon name='twitter' type='logo' ></box-icon></a>
+                <a href=""><box-icon type='logo' name='youtube'></box-icon></a>
+                <a href=""><box-icon name='tiktok' type='logo' ></box-icon></a>
+            </div>
+        </div>     
+    </footer>
+    <!-- Scripts -->
+    <script src="../js/bagscript.js"></script>
+   <!-- boxicon -->
+   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> 
+</body>
+</html>

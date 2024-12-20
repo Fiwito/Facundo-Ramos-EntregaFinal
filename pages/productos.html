@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Hoja  de estilos -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- .ico -->
+  <link rel="icon" href="../imgs/moonIcon.ico">
+  <!-- Fuente Paprika -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Paprika&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <title>Productos - Mercado de la Luna</title>
+</head>
+<body>
+    <header>    
+        <div class="top-bar">
+                <a href="../index.html" class="home">
+                <img class="logo" src="https://bg3.wiki/w/images/4/45/Class_Druid_Moon_Badge_Icon.png" alt="luna">
+                <h1>El Mercado de la Luna</h1>
+                </a>
+
+           
+            <nav class="navbar-container">
+                <ul class="nav-list">
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./reseñas.html">Reseñas</a></li>
+                    <li id=><a id="list-item-bag" href="./bolsa.html"><img src="https://cdn-icons-png.freepik.com/512/1232/1232698.png" alt="bag"><span id="item-counter">0</span></a></li>
+                </ul>
+            </nav>   
+        </div>            
+         
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Productos</h2>
+            <div class="prod-lista">
+                <div class="producto">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/062/865/416/large/erika-schneider-health-potion-4.jpg?1684158500" alt="Producto">
+                    <h3>Healing Potion</h3>
+                    <h4 class="price-tag">50 gp</h4>
+                    <button class="boton-comprar" type="button" onclick="addItem('Healing Potion', 50)">Añadir a la bolsa</button>
+                </div>
+                <div class="producto">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/062/865/416/large/erika-schneider-health-potion-4.jpg?1684158500" alt="Producto">
+                    <h3>Greater Healing Potion</h3>
+                    <h4 class="price-tag">250 gp</h4>
+                    <button class="boton-comprar" type="button" onclick="addItem('Greater Healing Potion', 250)">Añadir a la bolsa</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/c4/e9/5d/c4e95d3236da2f5c0aea361925f423c4.jpg" alt="Thieves' Tools">
+                    <h3>Thieves' Tools</h3>
+                    <h4 class="price-tag">25 gp</h4>
+                    <button class="boton-comprar" type="button" onclick="addItem('Thieve s Tools', 25)">Añadir a la bolsa</button>
+                </div>
+                <div class="producto">
+                    <img src="https://images.squarespace-cdn.com/content/v1/62e7a92f066fa3730dcd4604/7fb99a4c-4644-47fa-95ee-3ae9039afb54/v2-9cejt-7bcmq.jpg" alt="Rope">
+                    <h3>Hempen Rope (50ft)</h3>
+                    <h4 class="price-tag">1 gp</h4>
+                    <button class="boton-comprar" type="button" onclick="addItem('Hempen Rope', 1)">Añadir a la bolsa</button>
+                </div>
+                <div class="producto">
+                    <img src="https://www.dndbeyond.com/avatars/thumbnails/7/356/1000/1000/636284760571117587.jpeg" alt="Producto">
+                    <h3>Ring of Mind Shielding</h3>
+                    <h4 class="price-tag">2500 gp</h4>
+                    <button class="boton-comprar" type="button" onclick="addItem('Ring of Mind Shielding', 2500)">Añadir a la bolsa</button>
+                </div>
+                <div class="producto">
+                    <img src="https://www.dndbeyond.com/avatars/thumbnails/7/219/1000/1000/636284733648450283.jpeg" alt="Producto">
+                    <h3>Flame-Tongue Sword</h3>
+                    <h4 class="price-tag">2000 gp</h4>
+                    <button class="boton-comprar" type="button" onclick="addItem('Flame-Tongue Sword', 2000)">Añadir a la bolsa</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/564x/43/c3/d9/43c3d9c374c75e8aa6c25892cb5c7b62.jpg" alt="Producto">
+                    <h3>Hand Crossbow</h3>
+                    <h4 class="price-tag">75 gp</h4>
+                    <button class="boton-comprar" type="button" onclick="addItem('Hand Crossbow', 75)">Añadir a la bolsa</button>
+                </div>
+                <div class="producto">
+                    <img src="https://static.wikia.nocookie.net/forgottenrealms/images/b/b5/Dungeon_Masters_guide_5e_-_Bag_of_Holding_-_p153_-_Conceptoplis.jpg/revision/latest?cb=20190714213031" alt="Producto">
+                    <h3>Bag of Holding</h3>
+                    <h4 class="price-tag">150 gp</h4>
+                    <button class="boton-comprar" type="button" onclick="addItem('Bag of Holding', 150)">Añadir a la bolsa</button>
+                </div>
+                <div class="producto">
+                    <img src="https://www.dndbeyond.com/avatars/thumbnails/7/235/1000/1000/636284736878181910.jpeg" alt="Producto">
+                    <h3>Goggles of Night</h3>
+                    <h4 class="price-tag">100 gp</h4>
+                    <button class="boton-comprar" type="button" onclick="addItem('Goggles of Night', 100)">Añadir a la bolsa</button>
+                </div>
+                <div class="producto">
+                    <img src="https://www.aidedd.org/dnd/images-om/eversmoking-bottle.jpg" alt="Producto">
+                    <h3>Eversmoking Bottle</h3>
+                    <h4 class="price-tag">200 gp</h4>
+                    <button class="boton-comprar" type="button" onclick="addItem('Eversmoking Bottle', 200)">Añadir a la bolsa</button>
+                </div>
+                <div class="producto">
+                    <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/10/alchemy-jug.jpg" alt="Producto">
+                    <h3>Alchemy Jug</h3>
+                    <h4 class="price-tag">60 gp</h4>
+                    <button class="boton-comprar" type="button" onclick="addItem('Alchemy Jug', 60)">Añadir a la bolsa</button>
+                </div>
+                <div class="producto">
+                    <img src="https://img.freepik.com/premium-photo/mystical-enchantment-unveiled-captivating-3d-render-magic-spell-scroll_983420-11930.jpg" alt="Producto">
+                    <h3>Spell Scroll</h3>
+                    <h4 class="price-tag">100 gp</h4>
+                    <button class="boton-comprar" type="button" onclick="addItem('Spell Scroll', 100)">Añadir a la bolsa</button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section>           
+                <h2>Servicios</h2>
+                <article class="servicio">
+                    <h3>Servicio de Aventureros</h3>
+                    <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2023/10/dungeons-dragons-challenge-ratings-explained.jpg" alt="Party">               
+                    <h4 class="servicio-descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloribus deleniti minus iure repellendus eum nesciunt obcaecati perspiciatis deserunt quibusdam nemo consectetur nisi minima reprehenderit impedit earum, libero sequi. Dolorum porro veniam et natus, quia eveniet minus adipisci facere tempora aliquid aliquam doloribus, odit aperiam perspiciatis error numquam architecto praesentium tempore! Porro ducimus dicta, nobis odit sed itaque tempora, dignissimos velit consequatur nostrum dolor repellat aperiam laudantium nisi! Quis amet temporibus ipsam at harum quo laboriosam veritatis eveniet quibusdam, adipisci iste voluptates pariatur cumque eius eligendi voluptate exercitationem molestias rem dicta libero, magni maxime autem? Iste repudiandae odit voluptatibus culpa.</h4>
+                    <h4 class="service-price-tag"><a href="">Consulta Nuestras Tarifa >></a></h4>                    
+                </article>
+
+                <article class="servicio">
+                    <h3>Servicio de Artifices</h3>
+                    <img src="https://dungeonsanddragonsfan.com/wp-content/uploads/2024/09/new-gnome-dnd-2024-16.png" alt="Party">               
+                    <h4 class="servicio-descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloribus deleniti minus iure repellendus eum nesciunt obcaecati perspiciatis deserunt quibusdam nemo consectetur nisi minima reprehenderit impedit earum, libero sequi. Dolorum porro veniam et natus, quia eveniet minus adipisci facere tempora aliquid aliquam doloribus, odit aperiam perspiciatis error numquam architecto praesentium tempore! Porro ducimus dicta, nobis odit sed itaque tempora, dignissimos velit consequatur nostrum dolor repellat aperiam laudantium nisi! Quis amet temporibus ipsam at harum quo laboriosam veritatis eveniet quibusdam, adipisci iste voluptates pariatur cumque eius eligendi voluptate exercitationem molestias rem dicta libero, magni maxime autem? Iste repudiandae odit voluptatibus culpa.</h4>
+                    <h4 class="service-price-tag"><a href="">Consulta Nuestras Tarifa >></a></h4>                    
+                </article>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="iframe-container">
+            <p>Buscanos en la proxima luna llena</p>
+            <iframe sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-downloads" frameborder="0" allowfullscreen="" src="https://azgaar.github.io/Fantasy-Map-Generator/?maplink=https://dl.dropboxusercontent.com/s/42vnox2ce16altr/FMG%20Example.map?dl=0" style="overflow: auto;"></iframe>
+        </div>
+        <div class="redes-container">
+            <p>Seguinos en nuestras redes</p>
+            <div class="rrss-icons">
+                <a href=""><box-icon name='twitter' type='logo' ></box-icon></a>
+                <a href=""><box-icon type='logo' name='youtube'></box-icon></a>
+                <a href=""><box-icon name='tiktok' type='logo' ></box-icon></a>
+            </div>
+        </div>     
+    </footer>
+  <!-- Scripts -->
+  <script src="../js/mercado-script.js"></script>
+   <!-- boxicon -->
+   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> 
+</body>
+</html>

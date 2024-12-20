@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Hoja  de estilos -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- .ico -->
+    <link rel="icon" href="./imgs/moonIcon.ico">
+    <!-- Fuente Paprika -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Paprika&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <title>El Mercado de la Luna</title>
+</head>
+<body>
+    <header>    
+        <div class="top-bar">
+            <div class="home">
+                <img class="logo" src="https://bg3.wiki/w/images/4/45/Class_Druid_Moon_Badge_Icon.png" alt="luna">
+                <h1>El Mercado de la Luna</h1>
+            </div>
+           
+            <nav class="navbar-container">
+                <ul class="nav-list">
+                    <li><a href="./pages/productos.html">Productos</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <li><a href="./pages/reseñas.html">Reseñas</a></li>
+                    <li id=><a id="list-item-bag" href="./pages/bolsa.html"><img src="https://cdn-icons-png.freepik.com/512/1232/1232698.png" alt="bag"><span id="item-counter">0</span></a></li>
+                </ul>
+            </nav>   
+        </div>            
+            <img class="banner" src="https://img.freepik.com/premium-photo/witcher-night-market-fascinating-fantasy-scene_934697-50633.jpg" alt="img" > 
+    </header>
+
+    <main>
+        <section>
+            <h2> Productos Destacados <a href="./pages/productos.html">(ver más)>></a></h2>
+            <div class="prod-destacados">
+                <article class="producto">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/062/865/416/large/erika-schneider-health-potion-4.jpg?1684158500" alt="Producto">
+                    <h3>Healing Potion</h3>
+                    <h4 class="price-tag">50 gp</h4>
+                    <button class="boton-comprar" type="button" onclick="addItem('Healing Potion', 50)">Añadir a la bolsa</button>
+                </article>
+                <article class="producto">
+                    <img src="https://i.pinimg.com/736x/c4/e9/5d/c4e95d3236da2f5c0aea361925f423c4.jpg" alt="Thieves' Tools">
+                    <h3>Thieves' Tools</h3>
+                    <h4 class="price-tag">25 gp</h4>
+                    <button class="boton-comprar" type="button" onclick="addItem('Thieve s Tools', 25)">Añadir a la bolsa</button>
+                </article>
+                <article class="producto">
+                    <img src="https://images.squarespace-cdn.com/content/v1/62e7a92f066fa3730dcd4604/7fb99a4c-4644-47fa-95ee-3ae9039afb54/v2-9cejt-7bcmq.jpg" alt="Rope">
+                    <h3>Hempen Rope (50ft)</h3>
+                    <h4 class="price-tag">1 gp</h4>
+                    <button class="boton-comprar" type="button" onclick="addItem('Hempen Rope', 1)">Añadir a la bolsa</button> 
+                    
+                </article>
+            </div>
+        </section>
+
+        
+        <section>
+            <h2>¿Quienes Somos?</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem illo, delectus nesciunt voluptas ipsam itaque quibusdam veritatis omnis a temporibus voluptate quam ducimus id fuga minus. Harum voluptates eaque veritatis inventore nesciunt consequuntur ut molestias illo provident, labore laborum officia dolores doloribus repellendus est architecto eligendi, fuga tempora! Eaque, ut? Consectetur beatae vitae assumenda quos dolorem iure voluptatem impedit architecto voluptate odit officiis ipsa obcaecati corporis nisi, hic a modi libero eum odio ipsum accusantium? Laudantium facere magnam animi exercitationem expedita quibusdam voluptatum a maiores doloribus sint dolor saepe quae autem quo tempore rem architecto corrupti ex voluptatem quia dignissimos nesciunt, beatae voluptas. Vel soluta sequi qui nihil voluptates dolorem modi natus. Sunt neque vitae sequi, molestiae qui sapiente distinctio culpa? Necessitatibus earum libero dignissimos voluptatum architecto unde eaque accusantium veritatis laudantium, a fuga error sunt aliquam perferendis pariatur cumque quam beatae! Voluptates aspernatur sequi natus odit facere repellat impedit molestiae accusamus hic quibusdam accusantium tenetur architecto illo dignissimos iste iusto adipisci sapiente aut placeat, reprehenderit velit autem quis? Sint iste assumenda consequuntur similique. Neque atque, magni ducimus, ipsam possimus rerum vitae eius maxime ea quaerat cum laborum, quos debitis dolorem illum ex nostrum? Minus voluptatibus cupiditate sequi! Ab exercitationem facilis voluptatem, in quae totam soluta, animi cumque quam architecto repellendus dicta nemo quia? Exercitationem, suscipit. Nulla fuga suscipit quia rerum maxime debitis sed quam commodi qui! Ex illo eveniet necessitatibus, aspernatur voluptate magni beatae rerum culpa eaque officiis asperiores.</p>
+            <h4>- Toro</h4>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="iframe-container">
+            <p>Buscanos en la proxima luna llena</p>
+            <iframe sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-downloads" frameborder="0" allowfullscreen="" src="https://azgaar.github.io/Fantasy-Map-Generator/?maplink=https://dl.dropboxusercontent.com/s/42vnox2ce16altr/FMG%20Example.map?dl=0" style="overflow: auto;"></iframe>
+        </div>
+        <div class="redes-container">
+            <p>Seguinos en nuestras redes</p>
+            <div class="rrss-icons">
+                <a href=""><box-icon name='twitter' type='logo' ></box-icon></a>
+                <a href=""><box-icon type='logo' name='youtube'></box-icon></a>
+                <a href=""><box-icon name='tiktok' type='logo' ></box-icon></a>
+            </div>
+        </div>     
+    </footer>
+
+  <!-- Scripts -->
+   <script src="./js/mercado-script.js"></script>
+   <!-- boxicon -->
+   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> 
+</body>
+</html>

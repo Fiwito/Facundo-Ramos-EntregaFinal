@@ -1,0 +1,569 @@
+body{
+    width: 100vw;
+    font-family: "Paprika", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../imgs/mapa.png");
+    background-position: 45% 60%;
+    backdrop-filter: blur(2px);
+    
+}
+header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: 100vw;
+}
+.top-bar{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    z-index: 1000;
+    top: 0;  
+    background-color: rgb(62, 74, 100);
+    border-bottom:  rgb(109, 99, 82) solid 4px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+}
+.logo{
+    max-width: 100px;
+    height: auto;
+}
+.navbar-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 5%;
+
+}
+.nav-list{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    gap: 20%;
+    margin: 8px;
+    justify-content: flex-end;
+    
+}
+
+.nav-list li a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: azure;
+}
+
+.nav-list li a:hover{
+    text-decoration: underline;
+    font-size: 1.5em;
+    color:  rgb(109, 99, 82);
+}
+
+#list-item-bag{
+    display: flex;
+    align-content: center;
+}
+.nav-list li a img {
+    max-height: 35px;    
+}
+
+#item-counter{
+    padding-top: 5px;
+    font-size: 1;
+    
+}
+
+.banner{
+    height: 600px;
+    object-fit: cover;
+    object-position: 0% 90%;
+}
+
+h2 a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+
+section{
+    background-color: rgba(165, 97, 42, 0.342);
+    padding: 10px ;
+    margin: 15px 8vw;
+    border-radius: 8px;
+    border: 3px solid blanchedalmond;
+    color:azure ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.prod-destacados{
+    display: flex;
+    border-radius: 2%;   
+    text-align: center;   
+    justify-content: space-between; 
+    gap: 50px;
+}
+
+.producto{
+    padding: 20px;
+    background-color: rgb(226, 172, 105);
+    color: black;
+    border-radius: 5%;
+    border: 1px solid burlywood;
+}
+
+.price-tag{
+    color: gold;
+}
+
+.producto img{
+    max-width: 250px;   
+    height: 250px;
+    object-fit: cover;
+    border-radius: 2%;
+
+}
+
+.producto button{
+    background-color: burlywood;
+    height: 2em;
+    font-family: "Paprika", sans-serif;
+}
+
+footer{
+    background-color: rgba(41, 25, 11, 0.87);
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: 100px 1fr;
+    max-height: 600px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+
+footer p{
+    margin-top: 0;
+    
+}
+
+.redes-container{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+
+
+.iframe-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-row-start: 2;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.iframe-container iframe{
+    max-width: 300px;
+}
+
+/* ----------- pagina productos -------------*/
+.prod-lista{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vw;
+    text-align: center;
+}
+
+.servicio{
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    grid-template-rows: 50px auto 50px;
+    column-gap: 2%;
+    margin: 8px;
+    background-color: rgba(165, 97, 42, 0.342);
+    padding: 0 2%;
+    border-radius: 2px;
+}
+
+.servicio-descripcion{
+    margin-top: 0;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    font-size: 0.7em;
+}
+
+.servicio img{
+   
+    max-width: 350px;   
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2%;
+    grid-row-start: 2;
+    grid-column-start: 1;   
+}
+
+.service-price-tag{
+    display: flex;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    align-items: center;
+    justify-content: end;
+    padding: 8px;
+    margin: 0;
+}
+.service-price-tag a{
+    text-decoration: none;
+    color: black;    
+}
+.service-price-tag :hover{
+    text-decoration: underline;
+    color: white;    
+}
+
+/* -----------------------RESEÑAS---------------------------------- */
+
+.reseñas-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+}
+
+.reseña{
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    grid-template-rows: 50px auto;
+    margin: 8px;
+    background-color: rgba(165, 97, 42, 0.342);
+    padding: 0 2%;
+    border-radius: 2px;
+    gap: 0 8px;
+}
+
+.reseña-descripcion{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    font-size: 0.6em;
+}
+
+.reseña img{
+    max-width: 150px;   
+    height: 150px;
+    object-fit: cover;
+    border-radius: 2%;
+    grid-row-start: 2;
+    grid-column-start: 1;   
+    margin-bottom: 5px;
+    border:rgb(102, 85, 62) solid 2px;
+}
+
+/* ----------------CONTACTO------------------ */
+
+.contac-container{
+    border: 5px solid rgb(109, 99, 82);
+    background-color: rgba(160, 81, 45, 0.267);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25vw 50px;
+}
+
+.contac-container img{
+    padding: 5px;
+    margin: 2%;
+    border-radius: 2px;
+    max-height: 500px;
+    max-width: 50%;
+}
+
+fieldset{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    gap: 50px;
+    border: rgb(109, 99, 82) solid 1px;
+    background-color: rgba(189, 162, 112, 0.274);
+        
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+}
+fieldset input{
+    max-width: 50%;
+    height: 1.5em;
+    color: black;
+    font-weight: bolder;
+}
+
+fieldset button{
+    height: 3em;
+    background-color: burlywood;
+    color: black;
+    font-family: "Paprika", sans-serif;
+}
+
+
+fieldset input, textarea{
+    background-color: burlywood;
+}
+
+  /* ----------CARRITO/BOLSA----------------- */
+
+  #bolsa-title{
+    text-align: center;
+    color: white;
+    
+   }
+   
+   .boton-finalizar{
+   
+       margin: 8px;
+       margin-top: 12px;
+       background-color: burlywood;
+       height: 2em;
+       font-family: "Paprika", sans-serif;
+   }
+
+  #bag-list{
+    display: flex;
+    gap: 10px;
+    
+    text-align: center;
+}
+
+@media (max-width: 992px) 
+{
+
+    .nav-list{
+        margin: 0;
+        gap: 10%;
+    }
+
+    .banner{
+        height: 400px;
+        object-fit: cover;
+        object-position: 0% 90%;
+    }
+
+    .prod-destacados{  
+        flex-wrap: wrap;
+        justify-content: center; 
+        text-align: center;
+    }
+
+    /* -----------------PRODUCTOS------------------ */
+    .prod-lista{
+        display: flex;
+        flex-wrap: wrap;        
+        text-align: center;
+        justify-content: center;
+    }
+
+/* --------------------RESEÑAS-------------------- */
+    
+    .reseñas-container{
+        grid-template-columns: 1fr 1fr;
+    } 
+
+/* --------------CONTACTO---------------------- */
+    .contac-container{
+        
+        flex-wrap: wrap;
+        gap: 10%;
+        margin: 10vh;
+        
+    }
+    .contac-container img{
+        padding: 5px;
+        border-radius: 2px;
+        max-height: 420px;
+        object-fit: contain;
+    }
+    
+
+    /* ----------FOOTER----------------- */
+    footer{
+        padding-top: 2% ;
+        grid-template-columns: auto;
+        max-height: 600px;
+    }
+
+    .redes-container{
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+
+}
+@media (max-width: 768px)
+{
+
+        .nav-list{
+            margin: 0;
+            gap: 20px;
+        }
+
+        .banner{
+            height: 400px;
+            object-fit: cover;
+            object-position: 0% 90%;
+        }
+
+        .prod-destacados{
+            display: flex;
+            flex-direction: column;
+            
+            text-align: center;
+        }
+
+        /* -----------------PRODUCTOS------------------ */
+        .prod-lista{
+            display: flex;
+            flex-wrap: wrap;
+            
+            text-align: center;
+        }
+
+        .servicio{
+            display: flex;
+            flex-direction: column;
+        }
+    /* --------------------RESEÑAS-------------------- */
+        .reseñas-container{
+            grid-template-columns: repeat(1,1fr);
+        }
+    /* --------------CONTACTO---------------------- */
+        .contac-container{
+            
+            flex-wrap: wrap;
+            gap: 10%;
+            margin: 10vh;
+            
+        }
+        .contac-container img{
+            padding: 5px;
+            border-radius: 2px;
+            max-height: 420px;
+            object-fit: contain;
+        }
+        
+
+    /* ----------FOOTER----------------- */
+    footer{
+        
+        grid-template-columns: auto;
+        max-height: 600px;
+    }
+
+    .redes-container{
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+
+}
+
+@media (max-width: 480px)
+{
+
+        .navbar-container{
+            width: 100%;  
+            padding: 0;
+            margin: 0;
+
+        }
+        .nav-list{
+            padding: 0%;
+            gap: 5%;
+            margin-right: 5%;
+            font-size: 0.8em;
+        }
+
+        .banner{
+            height: 400px;
+            object-fit: cover;
+            object-position: 0% 90%;
+        }
+
+        .prod-destacados{
+            display: flex;
+            flex-direction: column;
+            
+            text-align: center;
+        }
+
+        /* -----------------PRODUCTOS------------------ */
+        .prod-lista{
+            display: flex;
+            flex-direction: column;
+            
+            text-align: center;
+        }
+
+        .servicio{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    /* --------------------RESEÑAS-------------------- */
+        .reseñas-container{
+            grid-template-columns: repeat(1,1fr);
+            
+        }
+    /* --------------CONTACTO---------------------- */
+        .contac-container{
+            
+            flex-wrap: wrap;
+            margin: 5% 10%;
+            
+        }
+        .contac-container img{
+            width: 100%;
+            padding: 5px;
+            border-radius: 2px;
+            max-height: 500px;
+            object-fit: contain;
+        }
+        
+        fieldset{
+            padding: 5px;        
+        }
+
+
+  
+
+
+
+    /* ----------FOOTER----------------- */
+    footer{
+        grid-template-columns: auto;
+        max-height: 600px;
+    }
+
+    .redes-container{
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+}
+
+
+
+
+
