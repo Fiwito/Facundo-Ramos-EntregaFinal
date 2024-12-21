@@ -1,9 +1,8 @@
-let bolsa =[];
+let bolsa =JSON.parse(localStorage.getItem("bolsa")) || []; 
 
-window.addEventListener("onload", ()=>{
-    bolsa= JSON.parse(localStorage.getItem("bolsa"))
-})
+let itemCounter = document.getElementById("item-counter");
 
+itemCounter.textContent = bolsa.length;
 //Funcion que: 
 const addItem = (itemName, itemValue) => {
     //agregue items al carrito onclick de botom "agregar"
@@ -14,12 +13,13 @@ const addItem = (itemName, itemValue) => {
 
     //alerte?
     alert(`Agregaste ${itemName} por un valor de ${itemValue} GP`);
+
 }
 
 
 const counterUp = ()=> {
       //actualice el counter de items
-      document.getElementById("item-counter").textContent = bolsa.length; //(se utiliza length para q el contador tenga un int de refe preciso con el array)
+      /* document.getElementById("item-counter") */itemCounter.textContent = bolsa.length; //(se utiliza length para q el contador tenga un int de refe preciso con el array)
 }
 
 
@@ -27,3 +27,4 @@ const counterUp = ()=> {
 window.addEventListener("beforeunload", ()=>{
     localStorage.setItem("bolsa",JSON.stringify(bolsa))
 });
+
